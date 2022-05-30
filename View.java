@@ -4,9 +4,7 @@
 // DESCRIPTION
 // Implements the GUI for a calculator.
 //**************************************************************************************************
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Box;
@@ -45,8 +43,12 @@ public class View extends JFrame implements ActionListener {
 
         // Declare and create a JPanel named panelSysButton. Use the default FlowLayout layout
         JPanel panelSysButton = new JPanel();
+        panelSysButton.setLayout(new FlowLayout());
         // manager. Call addButton() to add buttons labeled "Clear", "About", and "Exit".
-        ???
+        addButton(panelSysButton, "Clear");
+        addButton(panelSysButton, "About");
+        addButton(panelSysButton, "Exit");
+        //???
 
         // Declare and create a JPanel named panelFunctSys. Use the BorderLayout layout manager.
         JPanel panelFunctSys = new JPanel();
