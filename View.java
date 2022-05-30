@@ -34,9 +34,14 @@ public class View extends JFrame implements ActionListener {
     public View() {
         // Declare and create a JPanel named panelFunctButton. Set the layout manager to GridLayout
         JPanel panelFunctButton = new JPanel();
+        panelFunctButton.setLayout(new GridLayout(2, 3));
         // with 2 rows and 2 columns. Call addButton() to add buttons labeled "x^y", "log 10",
+        addButton(panelFunctButton, "x^y");
+        addButton(panelFunctButton, "log 10");
         // "log e", and "sqrt".
-        ???
+        addButton(panelFunctButton, "log e");
+        addButton(panelFunctButton, "sqrt");
+        //???
 
         // Declare and create a JPanel named panelSysButton. Use the default FlowLayout layout
         JPanel panelSysButton = new JPanel();
