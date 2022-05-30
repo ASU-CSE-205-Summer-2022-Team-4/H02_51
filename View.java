@@ -33,39 +33,47 @@ public class View extends JFrame implements ActionListener {
      */
     public View() {
         // Declare and create a JPanel named panelFunctButton. Set the layout manager to GridLayout
+        JPanel panelFunctButton = new JPanel();
         // with 2 rows and 2 columns. Call addButton() to add buttons labeled "x^y", "log 10",
         // "log e", and "sqrt".
         ???
 
         // Declare and create a JPanel named panelSysButton. Use the default FlowLayout layout
+        JPanel panelSysButton = new JPanel();
         // manager. Call addButton() to add buttons labeled "Clear", "About", and "Exit".
         ???
 
         // Declare and create a JPanel named panelFunctSys. Use the BorderLayout layout manager.
+        JPanel panelFunctSys = new JPanel();
         // Add panelFunctButton to the CENTER region. Add panelSysButton to the SOUTH region.
         ???
 
         // Declare and create a JPanel named panelKeypad. Use the GridLayout layout manager with
+        JPanel panelKeypad = new JPanel();
         // 4 rows and 4 columns. Call addButton() to add the buttons labeled "7", "8", "9", and so
         // on.
         ???
 
         // Declare and create a new JPanel named panelBottom. Use the horizontal BoxLayout layout
+        JPanel panelBottom = new JPanel();
         // manager. Add panelKeypad. Add a 10-pixel wide rigid area (using Box.createRigidArea()).
         // Add panelFunctSys.
         ???
 
         // Declare and create a JPanel named panelTextField. Use the default FlowLayout layout
+        JPanel panelTextField = new JPanel();
         // manager. Create the mText JTextField making it 30 columns wide. Add mText to the
         // panelTextField panel.
         ???
 
         // Declare and create a JPanel named panelLabel. Use the default FlowLayout layout manager.
+        JPanel panelLabel = new JPanel();
         // Declare and create a JLabel named label displaying "Kalkutron-9000" or whatever you
         // want to display. Add label to panelLabel.
         ???
 
         // Declare and create a JPanel named panelMain. Use the vertical BoxLayout layout manager.
+        JPanel panelMain = new JPanel();
         // Add some vertical glue to panelMain (using Box.createVerticalGlue()). Add panelLabel.
         // Add some more vertical glue. Add panelTextField. Add panelBottom. Add some more vertical
         // glue.
