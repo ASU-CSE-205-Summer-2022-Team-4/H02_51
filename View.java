@@ -32,38 +32,57 @@ public class View extends JFrame implements ActionListener {
     public View() {
         // Declare and create a JPanel named panelFunctButton. Set the layout manager to GridLayout
         JPanel panelFunctButton = new JPanel();
-        panelFunctButton.setLayout(new GridLayout(2, 3));
-        // with 2 rows and 2 columns. Call addButton() to add buttons labeled "x^y", "log 10",
+        panelFunctButton.setLayout(new GridLayout(2, 2));
+        // with 2 rows and 2 columns. Call addButton() to add buttons labeled "x^y", "log 10","log e", and "sqrt".
+        //???
         addButton(panelFunctButton, "x^y");
         addButton(panelFunctButton, "log 10");
-        // "log e", and "sqrt".
         addButton(panelFunctButton, "log e");
         addButton(panelFunctButton, "sqrt");
-        //???
 
         // Declare and create a JPanel named panelSysButton. Use the default FlowLayout layout
         JPanel panelSysButton = new JPanel();
         panelSysButton.setLayout(new FlowLayout());
         // manager. Call addButton() to add buttons labeled "Clear", "About", and "Exit".
+        //???
         addButton(panelSysButton, "Clear");
         addButton(panelSysButton, "About");
         addButton(panelSysButton, "Exit");
-        //???
+
 
         // Declare and create a JPanel named panelFunctSys. Use the BorderLayout layout manager.
         JPanel panelFunctSys = new JPanel();
+        panelFunctSys.setLayout(new BorderLayout());
         // Add panelFunctButton to the CENTER region. Add panelSysButton to the SOUTH region.
-        ???
+        panelFunctSys.add(panelFunctButton, BorderLayout.CENTER);
+        panelFunctSys.add(panelSysButton, BorderLayout.SOUTH);
+        //???
 
-        // Declare and create a JPanel named panelKeypad. Use the GridLayout layout manager with
+        // Declare and create a JPanel named panelKeypad. Use the GridLayout layout manager with 4 rows and 4 columns. Call addButton() to add the buttons labeled "7", "8", "9", and so on
+        //???
         JPanel panelKeypad = new JPanel();
-        // 4 rows and 4 columns. Call addButton() to add the buttons labeled "7", "8", "9", and so
-        // on.
-        ???
+        panelKeypad.setLayout(new GridLayout(4, 4));
+        addButton(panelKeypad, "7");
+        addButton(panelKeypad, "8");
+        addButton(panelKeypad, "9");
+        addButton(panelKeypad, "/");
+        addButton(panelKeypad, "4");
+        addButton(panelKeypad, "5");
+        addButton(panelKeypad, "6");
+        addButton(panelKeypad, "*");
+        addButton(panelKeypad, "1");
+        addButton(panelKeypad, "2");
+        addButton(panelKeypad, "3");
+        addButton(panelKeypad, "-");
+        addButton(panelKeypad, "0");
+        addButton(panelKeypad, ".");
+        addButton(panelKeypad, "+/-");
+        addButton(panelKeypad, "+");
 
-        // Declare and create a new JPanel named panelBottom. Use the horizontal BoxLayout layout
+
+        // Declare and create a new JPanel named panelBottom. Use the horizontal BoxLayout layout manager. Add panelKeypad. Add a 10-pixel wide rigid area (using Box.createRigidArea()).
         JPanel panelBottom = new JPanel();
-        // manager. Add panelKeypad. Add a 10-pixel wide rigid area (using Box.createRigidArea()).
+        panelBottom.setLayout(new BoxLayout());
         // Add panelFunctSys.
         ???
 
