@@ -21,8 +21,8 @@ import javax.swing.JTextField;
  */
 public class View extends JFrame implements ActionListener {
 
-    public static final int FRAME_WIDTH  = 500;
-    public static final int FRAME_HEIGHT = 200;
+    public static final int FRAME_WIDTH  = 800;
+    public static final int FRAME_HEIGHT = 500;
 
     private JTextField mText;
 
@@ -157,12 +157,15 @@ public class View extends JFrame implements ActionListener {
         // Write code that determines if the Exit button is the source of the event and if so,
         // exit the application by calling System.exit().
         //???
-
-
+        String actionCommand = pEvent.getActionCommand();
+        if("Exit".equals(actionCommand)){
+            System.exit(0);
+        }
         // Write code that determines if the About button is the source of the event and if so,
         // display the about dialog using JOptionPane.showMessageDialog().
         //???
-
+        if("About".equals(actionCommand)){
+            JOptionPane.showMessageDialog(this,"Kalkutron-9000 Ver.1\nlia", "About",JOptionPane.PLAIN_MESSAGE);
+        }
     }
-
 }
