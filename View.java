@@ -1,9 +1,19 @@
-//**************************************************************************************************
+//********************************************************************************************************
 // CLASS: View
 //
 // DESCRIPTION
 // Implements the GUI for a calculator.
-//**************************************************************************************************
+//
+// COURSE AND PROJECT INFO
+// CSE205 Object Oriented Programming and Data Structures, Summer 2022
+// Project Number: P02
+//
+// AUTHOR: David McConnell  ASURITE ID: dmcconn7  EMAIL: dmcconn7@asu.edu
+// AUTHOR: Lia Moua         ASURITE ID: amoua     EMAIL: amoua@asu.edu
+// AUTHOR: Arsal Akhtar     ASURITE ID: akakhta2  EMAIL: akakhta2@asu.edu
+// AUTHOR: Kari McBride     ASURITE ID: kemcbri2  EMAIL: kemcbri2@asu.edu
+//********************************************************************************************************
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
